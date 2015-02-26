@@ -54,8 +54,8 @@ config = {
 						options: {
 							service: 'Mailgun',
 							auth: {
-								user: ''+process.env.MAILGUN_USER,
-								pass: ''+process.env.MAILGUN_PASS
+								user: process.env.MAILGUN_USER,
+								pass: process.env.MAILGUN_PASS
 							}
 						}
 				},
