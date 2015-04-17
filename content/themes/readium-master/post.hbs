@@ -9,6 +9,9 @@
 
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
+					{{#contentFor "meta"}}
+						<meta property="og:image" content="{{image}}"/>
+					{{/contentFor}}
 
         {{#has tag="articleImage"}}
 
