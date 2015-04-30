@@ -155,9 +155,9 @@ function redirectToSetup(req, res, next) {
 function isSSLrequired(isAdmin) {
     var forceSSL = url.parse(config.url).protocol === 'https:' ? true : false,
         forceAdminSSL = (isAdmin && config.forceAdminSSL);
-    if (forceSSL || forceAdminSSL) {
-        return true;
-    }
+     // if (forceSSL || forceAdminSSL) {
+         // return true;
+     // }
     return false;
 }
 
