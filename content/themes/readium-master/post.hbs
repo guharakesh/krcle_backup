@@ -42,11 +42,11 @@
                         var $this = $(this),
                             img = $this.find('img:first'),
                             url = img.attr('src');
-												
-												var og-image = document.createElement("META");
-												og-image.setAttribute("property", "og:image");
-												og-image.setAttribute("content", url);
-												document.head.appendChild(og-image);
+												var test = 1;
+												 var og-image = $(document).createElement("META");
+												 // og-image.setAttribute("property", "og:image");
+												 // og-image.setAttribute("content", url);
+												 // document.head.appendChild(og-image);
 
                         $(".post-image-image").css('background-image', 'url('+url+')');
 
