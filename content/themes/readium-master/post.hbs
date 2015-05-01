@@ -3,6 +3,14 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
+<script>
+	document.body.onload = addElement;
+	
+	function addElement() {
+		
+	};
+</script>
+
 <main class="content" role="main">
 
     <article class="{{post_class}}">
@@ -42,11 +50,10 @@
                         var $this = $(this),
                             img = $this.find('img:first'),
                             url = img.attr('src');
-												var test = 1;
-												 var og-image = $(document).createElement("META");
-												 // og-image.setAttribute("property", "og:image");
-												 // og-image.setAttribute("content", url);
-												 // document.head.appendChild(og-image);
+												// var ogImage = $(document);
+												// ogImage.setAttribute("property", "og:image");
+												// ogImage.setAttribute("content", url);
+												// document.head.appendChild(ogImage);
 
                         $(".post-image-image").css('background-image', 'url('+url+')');
 
