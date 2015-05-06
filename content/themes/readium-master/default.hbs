@@ -49,9 +49,12 @@
 
 		</script>
 		<script type="text/javascript">
-			console.log('sup default');
-			// var imgNode = document.createElement("meta");
-		  // var firstimage = document.getElementsByTagName("img")[0];
+			(function(win,doc) {
+				var imgNode = doc.createElement("meta");
+				console.log(imgNode);
+				var firstimage = doc.getElementsByTagName("img")[0];
+				console.log(doc.images);
+			 }(window,document));
 			// imgNode.setAttribute('property','og:image');
 			// console.log(firstimage);
 		</script>
