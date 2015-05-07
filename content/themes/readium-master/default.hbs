@@ -11,6 +11,7 @@
 
     {{! Page Meta }}
     <title>{{meta_title}}</title>
+		{{{block "meta"}}}
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
@@ -27,6 +28,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{author.image}}">
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
     <link rel="stylesheet" href="{{asset "js/styles/obsidian.css"}}">
@@ -47,16 +49,6 @@
 			ga('create', 'UA-60899111-1', 'auto');
 			ga('send', 'pageview');
 
-		</script>
-		<script type="text/javascript">
-			(function(win,doc) {
-				var imgNode = doc.createElement("meta");
-				console.log(imgNode);
-				var firstimage = doc.getElementsByTagName("img")[0];
-				console.log(doc.images);
-			 }(window,document));
-			// imgNode.setAttribute('property','og:image');
-			// console.log(firstimage);
 		</script>
 </head>
 <body class="{{body_class}}">
