@@ -11,6 +11,7 @@
 
     {{! Page Meta }}
     <title>{{meta_title}}</title>
+		{{{block "meta"}}}
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
@@ -20,14 +21,13 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{meta_title}}">
     <meta name="twitter:description" content="{{meta_description}}">
-    <meta name="twitter:site" content="http://mark-read.info"> <!-- Change this to your URL -->
-<meta name="twitter:creator" content="@MarkReadM"> <!-- Change this to your Twitter Handel -->
+    <meta name="twitter:site" content="http://www.keeprunningcle.com"> <!-- Change this to your URL -->
+<meta name="twitter:creator" content="@keeprunningcle"> <!-- Change this to your Twitter Handel -->
     <meta name="google-site-verification" content="">
     <meta property="fb:admins" content="">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
-		<meta property="og:image" content="{{image}}">
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
     <link rel="stylesheet" href="{{asset "js/styles/obsidian.css"}}">
